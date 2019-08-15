@@ -1,0 +1,13 @@
+name: hanabi
+version: 0.1.0
+
+authors:
+  - RogerChen98 <chen.rog@husky.neu.edu>
+
+targets:
+  hanabi:
+    main: src/hanabi.cr
+
+crystal: 0.30.0
+
+license: MIT
