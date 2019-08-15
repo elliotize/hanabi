@@ -1,6 +1,4 @@
-# TODO: Write documentation for `Hanabi`
-module Hanabi
-  VERSION = "0.1.0"
+require "./card"
 
-  # TODO: Put your code here
+module Hanabi
 end
