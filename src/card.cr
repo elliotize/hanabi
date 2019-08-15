@@ -5,7 +5,7 @@ module Hanabi
     getter color, value
 
     def initialize(color : String, value : UInt8)
-      @color = Hanabi::Color.of(color)
+      @color = Color.of(color)
       @value = value
 
       validate

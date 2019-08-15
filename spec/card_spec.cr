@@ -14,11 +14,13 @@ describe Hanabi::Card do
   end
 
   it "initializes only with good values" do
+    ([1, 2, 3, 4, 5] of UInt8).each do |value|
+      card = Hanabi::Card.new("red", value)
+      card.value.should eq(value)
+    end
+
     expect_raises(Exception, "card value must be between 1 and 5 inclusive") do
       Hanabi::Card.new("red", 6)
     end
-
-    card = Hanabi::Card.new("red", 5)
-    card.value.should eq(5)
   end
 end

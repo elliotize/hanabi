@@ -11,15 +11,15 @@ module Hanabi
 
       case color
       when "RED"
-        return Color::RED
+        return RED
       when "GREEN"
-        return Color::GREEN
+        return GREEN
       when "BLUE"
-        return Color::BLUE
+        return BLUE
       when "YELLOW"
-        return Color::YELLOW
+        return YELLOW
       when "WHITE"
-        return Color::WHITE
+        return WHITE
       else
         raise "unknown color"
       end
