@@ -4,13 +4,6 @@ module Hanabi
   class Card
     getter color, value
 
-    def initialize(color : String, value : UInt8)
-      @color = Color.of(color)
-      @value = value
-
-      validate
-    end
-
     def initialize(color : Color, value : UInt8)
       @color = color
       @value = value
